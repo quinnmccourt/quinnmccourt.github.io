@@ -4,15 +4,12 @@
 
 function range(start, end, step = 1) {
 let arr = [];
-  if (start === end) {
-    return arr;
-    }
-  else if (start < end && step < 0) {
+  // if (start === end) {
+  //   return arr;
+  //   }
+  if ((start === end) || (start < end && step < 0) || (start > end && step > 0)) {
     return arr;
    }
-  else if (start > end && step > 0) {
-    return arr;
-    }
   else {
     if (start < end) {
       for (let i = start; i <= end; i += step) {
@@ -118,10 +115,34 @@ function nth(list, num) {
 // deepEqual ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function deepEqual() {
+function deepEqual(value1, value2) {
+//check first if the values are objects
+  let keys1 = Object.keys(value1), keys2 = Object.keys(value2);
+  if (value1 === value2) {
+    return true;
+  }
+  if (value1 === null || value2 === null || typeof value1 !== "object" || typeof value2 !== "object") {
+    return false;
+  }
+  
+  if (keys1.length != keys2.length) {
+    return false;
+  }
 
+  
 }
-
+//if they are not both objcts, run strict comparison
+// if they are both objects, first check if one is null
+// if so, strict comparison value1 and value 2
+// if they are both objects and both are not equal to null compare object.keys
+function objectRecursion(obj) {
+  let x = 0;
+  if (obj.rest !== null) {
+    console.log(obj.value);
+    objectRecursion(obj.rest)
+  }
+}
+let object = {value: 1, rest: {value: 2, rest: {value: 3, rest: null}}};
 ////////////////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
