@@ -23,8 +23,8 @@ function isEven(n) {
   else if (n === 1) {
    return false;
   }
-  n = n - 2;
-   isEven(n);
+  n -= 2;
+   return isEven(n);
 
 }
 

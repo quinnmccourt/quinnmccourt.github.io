@@ -33,7 +33,7 @@
  ari = ari--;
  console.log(ari); // prints 4
 /*
- * 3. Comparison operators
+ * 3. Comparison operators allow use compare two values and use booleans. 
  */
 
 var varOne = 5;

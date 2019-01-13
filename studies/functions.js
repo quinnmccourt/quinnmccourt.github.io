@@ -11,15 +11,15 @@
 
 /*
  * 2. What’s the difference between a function’s parameters and arguments PASSED to a function?
- * A functions paramaters are variable placeholeds for the arguements passsed to a function. 
- *The arguements are given when the function is called. This allows for functions to be reused
+ * A functions parameters are variable placeholeders for the arguments passed to a function. 
+ *The arguements are given when the function is called. This allows for functions to be reused.
  */
  
- function add(num1, num2) { //num1 and num2 are the functions paramaters
+ function add(num1, num2) { //num1 and num2 are the functions parameters
    return num1 + num2;
  }
 
-add(1, 2); //1 and 2 are the arguements passed to the function.
+add(1, 2); //1 and 2 are the arguments passed to the function.
  
 /*
  * 3. What’s the syntax for a NAMED function?
@@ -58,7 +58,7 @@ function local() {
 }
 
 local(); // would print the global scope to the console because it can access the global scope
-// console.log(loc) would return a refrence error because it cannot see the local scope of the function.
+// console.log(loc) would return a reference error because it cannot see the local scope of the function.
 
 /*
  * 7. Closures: Functions form closures around the data they house. 
