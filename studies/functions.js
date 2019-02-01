@@ -11,8 +11,8 @@
 
 /*
  * 2. What’s the difference between a function’s parameters and arguments PASSED to a function?
- * A functions parameters are variable placeholeders for the arguments passed to a function. 
- *The arguements are given when the function is called. This allows for functions to be reused.
+ * A functions parameters are variable placeholders for the arguments passed to a function. 
+ *The arguments are given when the function is called. This allows for functions to be reused.
  */
  
  function add(num1, num2) { //num1 and num2 are the functions parameters

@@ -305,7 +305,7 @@ _.map = (col, func) => {
 */
 _.pluck = (arr, prop) => {
    return _.map(arr, obj => obj[prop]);
-}
+};
 /** _.every
 * Arguments:
 *   1) A collection
@@ -416,14 +416,11 @@ _.reduce = (arr, func, seed) => {
         result = arr[0]
     for (let i = 1; i < arr.length; i++) {
       result = func(result, arr[i], i)
-      console.log(result);
     }
     } else {
         result = seed;
-        console.log(result);
   for (let i = 0; i < arr.length; i++) {
       result = func(result, arr[i], i)
-      console.log(result);
     }
   }  
   return result;

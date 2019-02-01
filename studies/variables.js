@@ -40,6 +40,17 @@ myVariable = "someString";
  * let: assignment keyword that has block hoisting scope and can be reassigned
  * const: assignment keyword that has block hoisting scope and cannot be reassigned
  */
+ var changer = 'yes';
+ changer = 'no';
+ console.log(changer); // prints 'no'
+ 
+ let changing = 'yes';
+ changing = 'no';
+ console.log(changer); // prints 'no'
+ 
+ const change = 'no';
+ //change = 'yes' // TypeError: Assignment to constant variable. Cannot change the value of a const
+ 
  
 /*
  * 5. Hoisting
@@ -48,3 +59,20 @@ myVariable = "someString";
  * only variable names are hoisted while both the name and the code block of functions are hoisted.
  * Hoisting happens are runtime. 
  */
+ func();
+ var one = 'one';
+ var two = 'two';
+ function func() {
+     
+ }
+ // visualising hoisting would look like
+ 
+ var one;
+ var two;
+ function func() {
+     
+ }
+ one = 'one';
+ two = 'two';
+ func();
+ 

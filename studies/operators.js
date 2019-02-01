@@ -1,37 +1,40 @@
 /*
+ * Operators: Javascript uses operators to assign, compare, and manipulate data. 
+ *
+ *
  * 1. Assignment operators
  */
- var ass = "assignment"; // equals sign assigns right operand to the left operand
- console.log(ass); // prints "assignment"
+ var assign = "assignment"; // equals sign assigns right operand to the left operand
+ console.log(assign); // prints "assignment"
  
- var ass = 1;
- ass += 1;
- console.log(ass); // prints 2
- ass -= 1;
- console.log(ass); // prints 1
- ass *= 5;
- console.log(ass); // prints 5
- ass /= 5; 
- console.log(ass); // prints 1
+ var assign = 1;
+ assign += 1;
+ console.log(assign); // Adds the value on the right from the current value of assign. prints 2
+ assign -= 1;
+ console.log(assign); // Subtracts the value on the right from the current value of assign.  prints 1
+ assign *= 5;
+ console.log(assign); // Multiplies the value on the right from the current value of assign. prints 5
+ assign /= 5; 
+ console.log(assign); // Divides the value on the right from the current value of assign. prints 1
 /*
- * 2. Arithmetic operators
+ * 2. Arithmetic operators 
  */
  var ari;
  
  ari = 1 + 1;
- console.log(ari); // prints 2
+ console.log(ari); // Addition. prints 2
  ari = 1 - 1;
- console.log(ari); // prints 0
+ console.log(ari); // Subtraction. prints 0
  ari = 3 * 3;
- console.log(ari); // prints 9
+ console.log(ari); // Multiplication. prints 9
  ari = 9 / 3;
- console.log(ari); // prints 3
+ console.log(ari); // Division. prints 3
  ari = 9 % 5;
- console.log(ari); // prints 4
+ console.log(ari); //Uses modulo operator, which give the remainder from dividing two numbers. prints 4 
  ari = ari++;
- console.log(ari); // prints 5
+ console.log(ari); // Increments the humber by 1. prints 5
  ari = ari--;
- console.log(ari); // prints 4
+ console.log(ari); // Decrements the number by 1. prints 4
 /*
  * 3. Comparison operators allow use compare two values and use booleans. 
  */
@@ -62,7 +65,7 @@ let x = 5;
 
 console.log(x < 7 && x > 3); //logical AND op. prints true
 
-console.log(x > 50 || x === 5); //logial OR op. prints true
+console.log(x > 50 || x === 5); //logical OR op. prints true
 
  
  
@@ -70,7 +73,7 @@ console.log(x > 50 || x === 5); //logial OR op. prints true
  * 5. Unary operators (!, typeOf, -)
  */
 
-// a. !: converts datatypes into its boolean equivilent before negating it.
+// a. !: converts datatypes into its boolean equivalent before negating it.
 
 !5; // returns false
 !-5; // returns true
@@ -87,7 +90,7 @@ typeof number; // returns 'number'
 
 /* 
  * 6. Ternary operator (a ? b : c) is a shortcut for an if statement. If the first
- * condition (a) evalutates to true than (b) is executed, otherwise (c) is executed 
+ * condition (a) evaluates to true than (b) is executed, otherwise (c) is executed 
  */
  
 var name = 'Quinn';

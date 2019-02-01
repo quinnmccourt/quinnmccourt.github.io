@@ -1,4 +1,8 @@
-/* 
+/*
+ * Datatypes: Javascript can work with many different types of data; these datatypes
+ * have unique properties and are manipulated in different ways. Without data, we wouldn't have a reason
+ * to create a program. 
+ *
  * 1. A number is a primitive datatype that represents a numerical value. 
  * Numbers can be negative and/or decimals.
  */
@@ -17,7 +21,7 @@ console.log(name[0]); // should log "Q" to the console.
 
 /*
  * 3. Boolean is a primitive datatype that uses the true and false keywords.
- * Conditional statements use boolean values to control data flow.
+ * Conditional statements resolve to boolean values to control data flow.
  */
  
 var bool = true;
@@ -97,6 +101,11 @@ console.log(inf * 4); // prints Infinity to the console
  * they are unalterable and are a specific size. Complex data types aggregate
  * data and are mutable; in that you can change what is inside of them.
  */
+ 
+ let number = 42; // this variable is holding a single primitive value
+ let array = [1, 3, 5, 7]; // container holding multiple pieces of data
+ array.push(4);
+ console.log(array); // [1, 3, 5, 4, 7] can change what is inside of them
 
 /* 12. Primitive values are passed to a function by copy; 
  * this means that values will not be shared between variables, 
@@ -104,3 +113,13 @@ console.log(inf * 4); // prints Infinity to the console
  * Complex data types values are by reference; this means that they are 
  * pointing to specific values stored in memory.
  */ 
+
+let primitive = 5;
+let copy = primitive;
+primitive = 6;
+console.log(copy); // 5, copy assigned a copy of primitive, as opposed to a reference
+
+let complex = [];
+let reference = complex;
+reference = {};
+console.log(complex) // [], when reference is re-assigned the value at complex does not change. 

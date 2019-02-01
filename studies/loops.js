@@ -4,7 +4,7 @@
  * While loops: While loops need 1 step to be defined: an end condition
  * For loops: Need 3 steps to define: Where should I start, how long, and what
  * changes each time I loop.
- * For In loops: Need 2 steps to define: how keys will be refered to and which object
+ * For In loops: Need 2 steps to define: how keys will be referred to and which object
  * you want to loop over.
  */
  
@@ -22,8 +22,9 @@
 loopUp(50); // prints each number from 0 to 50.
 
 function loopDown(num) {
-    for (let i = num; i > -1; i--) {
-        console.log(i);
+   while (num >= 0) {
+        console.log(num);
+        num--
     }
 }
 

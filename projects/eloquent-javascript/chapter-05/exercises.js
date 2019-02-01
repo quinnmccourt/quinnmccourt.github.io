@@ -63,14 +63,24 @@ function characterScript(code) {
 }
 
 function dominantDirection(text) {
-  let counted = countBy(text, char => {
+  let count = countBy(text, char => {
     let script = characterScript(char.codePointAt(0));
-    return script ? script.direction : "none";
-  }).filter(({name}) => name != "none");
+    if (script) {
+      return script.direction 
+      } 
+      return "none";
+  }).filter(({name}) => {
+    return name != "none";
+  });
 
-  if (counted.length == 0) return "ltr";
+  if (count.length == 0) return "ltr";
 
-  return counted.reduce((a, b) => a.count > b.count ? a : b).name;
+  return count.reduce((accumulator, currentValue) => {
+    if (accumulator.count > currentValue.count) {
+      return accumulator;
+    }
+      return currentValue;
+  }).name
 }
 
 
